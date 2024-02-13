@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:visitorapp_frontend1/service/postservice.dart';
 import 'package:visitorapp_frontend1/service/visitorservice.dart';
 
-class addsecurity extends StatefulWidget {
-  const addsecurity({super.key});
+class addvisitor extends StatefulWidget {
+  const addvisitor({super.key});
 
   @override
-  State<addsecurity> createState() => _addsecurityState();
+  State<addvisitor> createState() => _addvisitorState();
 }
 
-class _addsecurityState extends State<addsecurity> {
+class _addvisitorState extends State<addvisitor> {
   @override
 
   TextEditingController name =new TextEditingController();
