@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:visitorapp_frontend1/pages/addsecurity.dart';
+import 'package:visitorapp_frontend1/pages/viewsecurity.dart';
 
 class adminhome extends StatelessWidget {
   const adminhome({super.key});
@@ -14,15 +16,21 @@ class adminhome extends StatelessWidget {
               SizedBox(
                 width: 250,
                   height: 60,
-                  child: ElevatedButton(onPressed: (){}, child: Text("Add Security"))),
+                  child: ElevatedButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>addsecurity()));
+                  }, child: Text("Add Security"))),
               SizedBox(
                   width: 250,
                   height: 60,
-                  child: ElevatedButton(onPressed: (){}, child: Text("view Security"))),
+                  child: ElevatedButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>ViewPost()));
+                  }, child: Text("view Security"))),
               SizedBox(
                   width: 250,
                   height: 60,
-                  child: ElevatedButton(onPressed: (){}, child: Text("viewall visitors"))),
+                  child: ElevatedButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>adminhome()));
+                  }, child: Text("viewall visitors"))),
             ],
           ),
         )
