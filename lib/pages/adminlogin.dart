@@ -40,7 +40,7 @@ class _adminloginState extends State<adminlogin> {
             ElevatedButton(onPressed: (){
               if(getemailid==emailid.text && getpassword ==password)
                 {
-                  //Navigator.push(context, MaterialPageRoute(builder: (context)=>adminhome()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>adminhome()));
                 }
             }, child: Text("Login")),
 
