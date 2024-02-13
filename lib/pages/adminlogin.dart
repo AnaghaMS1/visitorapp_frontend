@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:visitorapp_frontend1/pages/adminhome.dart';
 class adminlogin extends StatefulWidget {
   const adminlogin({super.key});
 
@@ -38,10 +39,18 @@ class _adminloginState extends State<adminlogin> {
             ),
             SizedBox(height: 10,),
             ElevatedButton(onPressed: (){
-              if(getemailid==emailid.text && getpassword ==password)
+              String enteredEmail = emailid.text;
+              String enteredPassword = password.text;
+              print("Entered email: $enteredEmail");
+              print("Entered password: $enteredPassword");
+              if (getemailid == enteredEmail && getpassword == enteredPassword)
                 {
+                  print("successfuly login");
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>adminhome()));
                 }
+              else{
+                print("error");
+              }
             }, child: Text("Login")),
 
 
